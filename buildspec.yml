@@ -10,9 +10,8 @@ phases:
       java: openjdk8
     commands:
     - echo installing maven...
-    - yum update
-    - yum install java-1.8.0-openjdk-devel
-    - yum install maven
+    - apt-get update -y
+    - apt-get install -y maven
   build:
     commands:
     - echo building the justiceleague-tracker
